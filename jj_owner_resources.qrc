@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="JJimages">
+    <file>userProfilepicture.png</file>
+    <file>userProfilepicture.png</file>
+    <file>straightline.png</file>
+    <file>straightline.png</file>
+    <file>account_icon.svg</file>
+    <file>search.png</file>
+    <file>add.png</file>
+    <file>delete.png</file>
+    <file>edit.png</file>
+    <file>account_icon.svg</file>
+    <file>JJLOGO.png</file>
+    <file>logout_icon.svg</file>
+    <file>moneyhand_icon.svg</file>
+    <file>orders_icon.svg</file>
+    <file>PIC_log_sign_in.png</file>
+    <file>sales_icon.svg</file>
+    <file>up.png</file>
+    <file>BACKGROUND.png</file>
+    <file>dashboard_icon.svg</file>
+    <file>dashboardcalendar.png</file>
+    <file>dottedline.png</file>
+    <file>inventory_icon.svg</file>
+  </qresource>
+</RCC>
