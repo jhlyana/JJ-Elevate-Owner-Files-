@@ -14,116 +14,74 @@ class Ui_JJ_LANDING(object):  # THIS PART CORRESPONDS TO class LandingPage(QMain
         self.BG.setPixmap(QtGui.QPixmap(":/JJimages/BACKGROUND.png"))
         self.BG.setScaledContents(True)
         self.BG.setObjectName("BG")
-        self.JJ = QtWidgets.QLabel(self.centralwidget)
-        self.JJ.setGeometry(QtCore.QRect(590, 450, 311, 81))
-        font = QtGui.QFont()
-        font.setFamily("Rubik Mono One")
-        font.setPointSize(10)
-        font.setBold(False)
-        font.setWeight(50)
-        font.setKerning(True)
-        self.JJ.setFont(font)
-        self.JJ.setStyleSheet("color: #ebe0cc;\n"
-"font-size: 100px;\n"
-"font-family: \"Rubik Mono One\", sans-serif;\n"
-"background: transparent;")
-        self.JJ.setScaledContents(True)
-        self.JJ.setObjectName("JJ")
-        self.ELEVATE = QtWidgets.QLabel(self.centralwidget)
-        self.ELEVATE.setGeometry(QtCore.QRect(890, 410, 481, 141))
-        font = QtGui.QFont()
-        font.setFamily("Arial Black")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(75)
-        font.setKerning(True)
-        self.ELEVATE.setFont(font)
-        self.ELEVATE.setStyleSheet("color: #d75413;\n"
-"font-size: 100px;\n"
-"font-family: \"Arial Black\", Arial, sans-serif; \n"
-"background: transparent;")
-        self.ELEVATE.setScaledContents(True)
-        self.ELEVATE.setObjectName("ELEVATE")
-        self.elv_ur_space = QtWidgets.QLabel(self.centralwidget)
-        self.elv_ur_space.setGeometry(QtCore.QRect(590, 510, 721, 131))
-        font = QtGui.QFont()
-        font.setFamily("Sora Semibold")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(75)
-        self.elv_ur_space.setFont(font)
-        self.elv_ur_space.setStyleSheet("color: #f6f3ee;\n"
-"font-size: 35px;\n"
-"font-family: \"Sora Semibold\", sans-serif; \n"
-"background: transparent;")
-        self.elv_ur_space.setScaledContents(True)
-        self.elv_ur_space.setObjectName("elv_ur_space")
-        self.Supply_Inst_Rep = QtWidgets.QLabel(self.centralwidget)
-        self.Supply_Inst_Rep.setGeometry(QtCore.QRect(700, 630, 471, 91))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Extrabold")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(75)
-        self.Supply_Inst_Rep.setFont(font)
-        self.Supply_Inst_Rep.setStyleSheet("color: #ebe0cc;\n"
-"font-size: 20px;\n"
-"font-family: \"Poppins Extrabold\", sans-serif;\n"
-"background: transparent;")
-        self.Supply_Inst_Rep.setScaledContents(True)
-        self.Supply_Inst_Rep.setObjectName("Supply_Inst_Rep")
-        self.pushButton_contOwner = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_contOwner.setGeometry(QtCore.QRect(150, 800, 221, 31))
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(10)
-        self.pushButton_contOwner.setFont(font)
-        self.pushButton_contOwner.setStyleSheet("QPushButton {\n"
-"background-color: #f6f3ee;\n"
-"border-radius: 15px; \n"
-"padding: 4px;\n"
-"border: none;\n"
-"color: #374550;\n"
-"font-size: 18px;\n"
-"font-family: \"MS Shell Dlg 2\", sans-serif;\n"
-"                }\n"
-"QPushButton:hover {\n"
-"                    background-color:#b2423c;\n"
-"                    color:white;\n"
-"font-weight: 700;\n"
-"                    text-align: center;\n"
-"                }\n"
-"")
-        self.pushButton_contOwner.setObjectName("pushButton_contOwner")
-        self.pushButton_contCashier = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_contCashier.setGeometry(QtCore.QRect(150, 860, 221, 31))
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(10)
-        self.pushButton_contCashier.setFont(font)
-        self.pushButton_contCashier.setStyleSheet("QPushButton {\n"
-"background-color: #f6f3ee;\n"
-"border-radius: 15px; \n"
-"padding: 4px;\n"
-"border: none;\n"
-"color: #374550;\n"
-"font-size: 18px;\n"
-"font-family: \"MS Shell Dlg 2\", sans-serif;\n"
-"                }\n"
-"QPushButton:hover {\n"
-"                    background-color:#b2423c;\n"
-"                    color:white;\n"
-"font-weight: 700;\n"
-"                    text-align: center;\n"
-"                }\n"
-"")
-        self.pushButton_contCashier.setObjectName("pushButton_contCashier")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(780, 130, 381, 251))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(890, 430, 431, 101))
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(60)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("color: #d75413;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(590, 440, 281, 101))
+        font = QtGui.QFont()
+        font.setFamily("Rubik Mono One")
+        font.setPointSize(60)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("color: #ebe0cc;\n"
+"font-family: \"Rubik Mono One\", sans-serif;\n"
+"background: transparent;")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(590, 550, 721, 51))
+        font = QtGui.QFont()
+        font.setFamily("Sora Semibold")
+        font.setPointSize(21)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("color: #f6f3ee;\n"
+"font-family: \"Sora Semibold\", sans-serif; \n"
+"background: transparent;")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(700, 650, 501, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Extrabold")
+        font.setPointSize(12)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("color: #ebe0cc;\n"
+"font-family: \"Poppins Extrabold\", sans-serif;\n"
+"background: transparent;")
+        self.label_5.setObjectName("label_5")
+        self.pushButton_cont_2Login = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_cont_2Login.setGeometry(QtCore.QRect(790, 800, 281, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.pushButton_cont_2Login.setFont(font)
+        self.pushButton_cont_2Login.setStyleSheet("QPushButton {\n"
+"background-color: #f6f3ee;\n"
+"border-radius: 15px; \n"
+"padding: 4px;\n"
+"border: none;\n"
+"color: #374550;\n"
+"font-family: \"MS Shell Dlg 2\", sans-serif;\n"
+"                }\n"
+"QPushButton:hover {\n"
+"                    background-color:#b2423c;\n"
+"                    color:white;\n"
+"font-weight: 700;\n"
+"                    text-align: center;\n"
+"                }\n"
+"")
+        self.pushButton_cont_2Login.setObjectName("pushButton_cont_2Login")
         JJ_LANDING.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(JJ_LANDING)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1925, 26))
@@ -139,14 +97,13 @@ class Ui_JJ_LANDING(object):  # THIS PART CORRESPONDS TO class LandingPage(QMain
     def retranslateUi(self, JJ_LANDING):
         _translate = QtCore.QCoreApplication.translate
         JJ_LANDING.setWindowTitle(_translate("JJ_LANDING", "Inventory and Sales Management System"))
-        self.JJ.setText(_translate("JJ_LANDING", "J&J\n"
+        self.label_2.setText(_translate("JJ_LANDING", "Elevate\n"
 ""))
-        self.ELEVATE.setText(_translate("JJ_LANDING", "Elevate\n"
+        self.label_3.setText(_translate("JJ_LANDING", "J&J\n"
 ""))
-        self.elv_ur_space.setText(_translate("JJ_LANDING", "Elevate Your Space, One Roof at a Time"))
-        self.Supply_Inst_Rep.setText(_translate("JJ_LANDING", "Supply                               Install                               Repair    "))
-        self.pushButton_contOwner.setText(_translate("JJ_LANDING", "Continue as Owner"))
-        self.pushButton_contCashier.setText(_translate("JJ_LANDING", "Continue as Cashier"))
+        self.label_4.setText(_translate("JJ_LANDING", "Elevate Your Space, One Roof at a Time"))
+        self.label_5.setText(_translate("JJ_LANDING", "Supply                               Install                               Repair    "))
+        self.pushButton_cont_2Login.setText(_translate("JJ_LANDING", "Continue to Login"))
 import jj_owner_resources_rc
 
 
@@ -158,17 +115,9 @@ if __name__ == "__main__":
     ui.setupUi(JJ_LANDING)
     JJ_LANDING.show()
     sys.exit(app.exec_())
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    JJ_LANDING = QtWidgets.QMainWindow()
-    ui = Ui_JJ_LANDING()
-    ui.setupUi(JJ_LANDING)
-    JJ_LANDING.show()
-    sys.exit(app.exec_())
-            
 
-# OWNER LOGIN--------------------------------------------------------------------------------------------------------
-class Ui_OwnrLOGIN(object):  # THIS PART CORRESPONDS TO class OwnerLoginPage(QMainWindow) in main_app.py
+# LOGIN--------------------------------------------------------------------------------------------------------
+class Ui_LOGIN(object):  # THIS PART CORRESPONDS TO class Login(QMainWindow) in main_app.py
     def setupUi(self, OwnrLOGIN):
         OwnrLOGIN.setObjectName("OwnrLOGIN")
         OwnrLOGIN.resize(1925, 1033)
@@ -417,25 +366,11 @@ class Ui_OwnrLOGIN(object):  # THIS PART CORRESPONDS TO class OwnerLoginPage(QMa
         self.label_18.setText(_translate("OwnrLOGIN", "J & J Roofsteel and Gutter Supply"))
         self.label_6.setText(_translate("OwnrLOGIN", "Moalboal Branch"))
         self.label_11.setText(_translate("OwnrLOGIN", "Supply       |         Install       |         Repair    "))
-import jj_owner_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    OwnrLOGIN = QtWidgets.QMainWindow()
-    ui = Ui_OwnrLOGIN()
-    ui.setupUi(OwnrLOGIN)
-    OwnrLOGIN.show()
-    sys.exit(app.exec_())
-
-# OWNER SIGNUP-------------------------------------------------------------------------------------------------------
-class Ui_OwnrSIGNUP(object):  # THIS PART CORRESPONDS TO class OwnerSignupPage(QMainWindow) in main_app.py
-    def setupUi(self, OwnrSIGNUP):
-        OwnrSIGNUP.setObjectName("OwnrSIGNUP")
-        OwnrSIGNUP.resize(1925, 1033)
-        OwnrSIGNUP.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.centralwidget = QtWidgets.QWidget(OwnrSIGNUP)
+    def setupUi(self, LOGIN):
+        LOGIN.setObjectName("LOGIN")
+        LOGIN.resize(1925, 1033)
+        LOGIN.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.centralwidget = QtWidgets.QWidget(LOGIN)
         self.centralwidget.setStyleSheet("background-color: white;")
         self.centralwidget.setObjectName("centralwidget")
         self.PIC = QtWidgets.QLabel(self.centralwidget)
@@ -458,494 +393,235 @@ class Ui_OwnrSIGNUP(object):  # THIS PART CORRESPONDS TO class OwnerSignupPage(Q
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.label_9 = QtWidgets.QLabel(self.frame)
-        self.label_9.setGeometry(QtCore.QRect(220, 10, 531, 71))
+        self.checkBox_rememberme = QtWidgets.QCheckBox(self.frame)
+        self.checkBox_rememberme.setGeometry(QtCore.QRect(60, 580, 201, 20))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_9.setFont(font)
-        self.label_9.setStyleSheet("color: #022162;\n"
-"font-size: 50px;\n"
-"font-weight: 700;\n"
+        font.setPointSize(13)
+        self.checkBox_rememberme.setFont(font)
+        self.checkBox_rememberme.setStyleSheet("color: #022162;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
-        self.label_9.setScaledContents(True)
-        self.label_9.setObjectName("label_9")
-        self.pushButton_signup = QtWidgets.QPushButton(self.frame)
-        self.pushButton_signup.setGeometry(QtCore.QRect(50, 830, 851, 51))
-        self.pushButton_signup.setMinimumSize(QtCore.QSize(100, 40))
+        self.checkBox_rememberme.setObjectName("checkBox_rememberme")
+        self.pushButton_xtolanding = QtWidgets.QPushButton(self.frame)
+        self.pushButton_xtolanding.setGeometry(QtCore.QRect(830, 30, 61, 31))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(87)
-        self.pushButton_signup.setFont(font)
-        self.pushButton_signup.setStyleSheet("border: 2px solid #374550; \n"
-"border-radius: 25px; \n"
-"padding: 5px; \n"
-"font-size: 27px;\n"
+        self.pushButton_xtolanding.setFont(font)
+        self.pushButton_xtolanding.setStyleSheet("border-radius: 13px; \n"
+"padding: 1px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background-color: #374550; \n"
 "color: white;")
-        self.pushButton_signup.setObjectName("pushButton_signup")
-        self.label_13 = QtWidgets.QLabel(self.frame)
-        self.label_13.setGeometry(QtCore.QRect(330, 260, 101, 61))
+        self.pushButton_xtolanding.setObjectName("pushButton_xtolanding")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(350, 90, 261, 131))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(47)
         font.setBold(True)
         font.setWeight(87)
-        self.label_13.setFont(font)
-        self.label_13.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("color: #022162;\n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
-        self.label_13.setScaledContents(True)
-        self.label_13.setObjectName("label_13")
-        self.owner_enterHomeAdd = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterHomeAdd.setGeometry(QtCore.QRect(50, 400, 851, 41))
-        self.owner_enterHomeAdd.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterHomeAdd.setFont(font)
-        self.owner_enterHomeAdd.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterHomeAdd.setObjectName("owner_enterHomeAdd")
-        self.owner_InputConfirmPassword = QtWidgets.QLineEdit(self.frame)
-        self.owner_InputConfirmPassword.setGeometry(QtCore.QRect(50, 760, 851, 41))
-        self.owner_InputConfirmPassword.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_InputConfirmPassword.setFont(font)
-        self.owner_InputConfirmPassword.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_InputConfirmPassword.setObjectName("owner_InputConfirmPassword")
+        self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.frame)
-        self.label_3.setGeometry(QtCore.QRect(60, 40, 151, 131))
+        self.label_3.setGeometry(QtCore.QRect(60, 240, 181, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(18)
         font.setBold(True)
         font.setWeight(87)
         self.label_3.setFont(font)
         self.label_3.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
-        self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
-        self.owner_enterPassword = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterPassword.setGeometry(QtCore.QRect(50, 670, 851, 41))
-        self.owner_enterPassword.setMinimumSize(QtCore.QSize(50, 30))
+        self.label_9 = QtWidgets.QLabel(self.frame)
+        self.label_9.setGeometry(QtCore.QRect(60, 420, 181, 71))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterPassword.setFont(font)
-        self.owner_enterPassword.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterPassword.setObjectName("owner_enterPassword")
-        self.owner_enterGender = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterGender.setGeometry(QtCore.QRect(310, 310, 221, 41))
-        self.owner_enterGender.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterGender.setFont(font)
-        self.owner_enterGender.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterGender.setObjectName("owner_enterGender")
-        self.owner_enterUsername = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterUsername.setGeometry(QtCore.QRect(50, 580, 851, 41))
-        self.owner_enterUsername.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterUsername.setFont(font)
-        self.owner_enterUsername.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterUsername.setObjectName("owner_enterUsername")
-        self.label_12 = QtWidgets.QLabel(self.frame)
-        self.label_12.setGeometry(QtCore.QRect(60, 180, 151, 41))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(18)
         font.setBold(True)
         font.setWeight(87)
-        self.label_12.setFont(font)
-        self.label_12.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
+        self.label_9.setFont(font)
+        self.label_9.setStyleSheet("color: #022162;\n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
-        self.label_12.setScaledContents(True)
-        self.label_12.setObjectName("label_12")
-        self.label_15 = QtWidgets.QLabel(self.frame)
-        self.label_15.setGeometry(QtCore.QRect(60, 350, 171, 61))
+        self.label_9.setObjectName("label_9")
+        self.login_usrname = QtWidgets.QLineEdit(self.frame)
+        self.login_usrname.setGeometry(QtCore.QRect(42, 310, 851, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_15.setFont(font)
-        self.label_15.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_15.setScaledContents(True)
-        self.label_15.setObjectName("label_15")
-        self.label_17 = QtWidgets.QLabel(self.frame)
-        self.label_17.setGeometry(QtCore.QRect(60, 530, 191, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_17.setFont(font)
-        self.label_17.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_17.setScaledContents(True)
-        self.label_17.setObjectName("label_17")
-        self.label_14 = QtWidgets.QLabel(self.frame)
-        self.label_14.setGeometry(QtCore.QRect(60, 260, 151, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_14.setFont(font)
-        self.label_14.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_14.setScaledContents(True)
-        self.label_14.setObjectName("label_14")
-        self.owner_enterLASTname = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterLASTname.setGeometry(QtCore.QRect(50, 220, 851, 41))
-        self.owner_enterLASTname.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterLASTname.setFont(font)
-        self.owner_enterLASTname.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
+        font.setPointSize(13)
+        self.login_usrname.setFont(font)
+        self.login_usrname.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
 "font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterLASTname.setObjectName("owner_enterLASTname")
-        self.owner_enterMIDinitial = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterMIDinitial.setGeometry(QtCore.QRect(50, 310, 211, 41))
-        self.owner_enterMIDinitial.setMinimumSize(QtCore.QSize(50, 30))
+        self.login_usrname.setObjectName("login_usrname")
+        self.login_password = QtWidgets.QLineEdit(self.frame)
+        self.login_password.setGeometry(QtCore.QRect(40, 500, 851, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterMIDinitial.setFont(font)
-        self.owner_enterMIDinitial.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
+        font.setPointSize(13)
+        self.login_password.setFont(font)
+        self.login_password.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
 "font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterMIDinitial.setObjectName("owner_enterMIDinitial")
-        self.owner_enterContactNum = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterContactNum.setGeometry(QtCore.QRect(50, 490, 851, 41))
-        self.owner_enterContactNum.setMinimumSize(QtCore.QSize(50, 30))
+        self.login_password.setObjectName("login_password")
+        self.pushButton_LOGIN = QtWidgets.QPushButton(self.frame)
+        self.pushButton_LOGIN.setGeometry(QtCore.QRect(42, 680, 851, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterContactNum.setFont(font)
-        self.owner_enterContactNum.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterContactNum.setObjectName("owner_enterContactNum")
-        self.label_18 = QtWidgets.QLabel(self.frame)
-        self.label_18.setGeometry(QtCore.QRect(60, 630, 191, 31))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(87)
-        self.label_18.setFont(font)
-        self.label_18.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
+        self.pushButton_LOGIN.setFont(font)
+        self.pushButton_LOGIN.setStyleSheet("border: 2px solid #374550; \n"
+"border-radius: 25px; \n"
+"padding: 5px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_18.setScaledContents(True)
-        self.label_18.setObjectName("label_18")
-        self.owner_enterFIRSTname = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterFIRSTname.setGeometry(QtCore.QRect(50, 130, 851, 41))
-        self.owner_enterFIRSTname.setMinimumSize(QtCore.QSize(50, 30))
+"background-color: #374550; \n"
+"color: white;")
+        self.pushButton_LOGIN.setObjectName("pushButton_LOGIN")
+        self.label_10 = QtWidgets.QLabel(self.frame)
+        self.label_10.setGeometry(QtCore.QRect(280, 740, 401, 81))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterFIRSTname.setFont(font)
-        self.owner_enterFIRSTname.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterFIRSTname.setObjectName("owner_enterFIRSTname")
-        self.label_16 = QtWidgets.QLabel(self.frame)
-        self.label_16.setGeometry(QtCore.QRect(610, 260, 161, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_16.setFont(font)
-        self.label_16.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_16.setScaledContents(True)
-        self.label_16.setObjectName("label_16")
-        self.label_19 = QtWidgets.QLabel(self.frame)
-        self.label_19.setGeometry(QtCore.QRect(60, 710, 231, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_19.setFont(font)
-        self.label_19.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_19.setScaledContents(True)
-        self.label_19.setObjectName("label_19")
-        self.label_20 = QtWidgets.QLabel(self.frame)
-        self.label_20.setGeometry(QtCore.QRect(60, 440, 191, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_20.setFont(font)
-        self.label_20.setStyleSheet("color: #022162;\n"
-"font-size: 18px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_20.setScaledContents(True)
-        self.label_20.setObjectName("label_20")
-        self.owner_enterBDAY = QtWidgets.QLineEdit(self.frame)
-        self.owner_enterBDAY.setGeometry(QtCore.QRect(600, 310, 301, 41))
-        self.owner_enterBDAY.setMinimumSize(QtCore.QSize(50, 30))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.owner_enterBDAY.setFont(font)
-        self.owner_enterBDAY.setStyleSheet("border: 1.2px solid #022162; \n"
-"border-radius: 14px; \n"
-"padding: 3px;\n"
-"font-size: 15px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.owner_enterBDAY.setObjectName("owner_enterBDAY")
-        self.label_21 = QtWidgets.QLabel(self.frame)
-        self.label_21.setGeometry(QtCore.QRect(340, 890, 281, 31))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(10)
+        font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_21.setFont(font)
-        self.label_21.setStyleSheet("color: #022162; \n"
-"font-size:20px; \n"
-"background: transparent; \n"
-"")
-        self.label_21.setScaledContents(True)
-        self.label_21.setObjectName("label_21")
-        self.pushButton_backtologin = QtWidgets.QPushButton(self.frame)
-        self.pushButton_backtologin.setGeometry(QtCore.QRect(410, 910, 131, 51))
-        self.pushButton_backtologin.setMinimumSize(QtCore.QSize(100, 40))
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet("color: #022162;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.label_10.setObjectName("label_10")
+        self.pushButton_forgotPass_login_page = QtWidgets.QPushButton(self.frame)
+        self.pushButton_forgotPass_login_page.setGeometry(QtCore.QRect(360, 840, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(13)
         font.setBold(True)
         font.setUnderline(True)
         font.setWeight(87)
-        self.pushButton_backtologin.setFont(font)
-        self.pushButton_backtologin.setStyleSheet("\n"
-"QPushButton{color: #022162;\n"
-"font-size: 24px;\n"
+        self.pushButton_forgotPass_login_page.setFont(font)
+        self.pushButton_forgotPass_login_page.setStyleSheet("border-radius: 25px; \n"
+"padding: 5px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background-color: transparent; \n"
-"border-radius: 25px; \n"
-"padding: 5px;}\n"
-"QPushButton:hover {\n"
-"color:#0cc0df;\n"
-"}")
-        self.pushButton_backtologin.setObjectName("pushButton_backtologin")
-        self.label_9.raise_()
-        self.pushButton_signup.raise_()
-        self.label_13.raise_()
-        self.owner_enterHomeAdd.raise_()
-        self.label_3.raise_()
-        self.owner_enterGender.raise_()
-        self.label_12.raise_()
-        self.label_15.raise_()
-        self.label_17.raise_()
-        self.label_14.raise_()
-        self.owner_enterContactNum.raise_()
-        self.label_18.raise_()
-        self.owner_enterFIRSTname.raise_()
-        self.label_16.raise_()
-        self.label_19.raise_()
-        self.label_20.raise_()
-        self.owner_enterBDAY.raise_()
-        self.label_21.raise_()
-        self.pushButton_backtologin.raise_()
-        self.owner_enterLASTname.raise_()
-        self.owner_enterMIDinitial.raise_()
-        self.owner_enterUsername.raise_()
-        self.owner_enterPassword.raise_()
-        self.owner_InputConfirmPassword.raise_()
-        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(-10, 460, 991, 491))
-        self.frame_2.setStyleSheet("background: transparent;")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.label_5 = QtWidgets.QLabel(self.frame_2)
-        self.label_5.setGeometry(QtCore.QRect(110, 50, 791, 51))
+"color: #022162;")
+        self.pushButton_forgotPass_login_page.setObjectName("pushButton_forgotPass_login_page")
+        self.label_12 = QtWidgets.QLabel(self.frame)
+        self.label_12.setGeometry(QtCore.QRect(390, 790, 161, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(13)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_12.setFont(font)
+        self.label_12.setStyleSheet("color: #022162;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.label_12.setObjectName("label_12")
+        self.jframe = QtWidgets.QFrame(self.centralwidget)
+        self.jframe.setGeometry(QtCore.QRect(-10, 460, 951, 431))
+        self.jframe.setStyleSheet("background: transparent;")
+        self.jframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.jframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.jframe.setObjectName("jframe")
+        self.label_18 = QtWidgets.QLabel(self.jframe)
+        self.label_18.setGeometry(QtCore.QRect(120, 20, 771, 111))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(24)
         font.setBold(True)
         font.setWeight(87)
-        self.label_5.setFont(font)
-        self.label_5.setStyleSheet("color: #ffffff;\n"
-"font-size: 41px;\n"
+        self.label_18.setFont(font)
+        self.label_18.setStyleSheet("color: #ffffff;\n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;\n"
 "")
-        self.label_5.setScaledContents(True)
-        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_5.setObjectName("label_5")
-        self.label_7 = QtWidgets.QLabel(self.frame_2)
-        self.label_7.setGeometry(QtCore.QRect(320, 120, 321, 41))
+        self.label_18.setObjectName("label_18")
+        self.label_6 = QtWidgets.QLabel(self.jframe)
+        self.label_6.setGeometry(QtCore.QRect(340, 110, 291, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(18)
         font.setBold(True)
         font.setWeight(87)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("color: #ffffff;\n"
-"font-size: 31px;\n"
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: #ffffff;\n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;\n"
 "")
-        self.label_7.setScaledContents(True)
-        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_7.setObjectName("label_7")
-        self.label_8 = QtWidgets.QLabel(self.frame_2)
-        self.label_8.setGeometry(QtCore.QRect(170, 250, 631, 41))
+        self.label_6.setObjectName("label_6")
+        self.label_11 = QtWidgets.QLabel(self.jframe)
+        self.label_11.setGeometry(QtCore.QRect(170, 250, 631, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(16)
         font.setBold(True)
         font.setWeight(87)
-        self.label_8.setFont(font)
-        self.label_8.setStyleSheet("color: #fff2bd; \n"
-"font-size: 27px; \n"
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("color: #fff2bd; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent; \n"
 "")
-        self.label_8.setObjectName("label_8")
-        OwnrSIGNUP.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(OwnrSIGNUP)
+        self.label_11.setObjectName("label_11")
+        LOGIN.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(LOGIN)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1925, 26))
         self.menubar.setObjectName("menubar")
-        OwnrSIGNUP.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(OwnrSIGNUP)
+        LOGIN.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(LOGIN)
         self.statusbar.setObjectName("statusbar")
-        OwnrSIGNUP.setStatusBar(self.statusbar)
+        LOGIN.setStatusBar(self.statusbar)
 
-        self.retranslateUi(OwnrSIGNUP)
-        QtCore.QMetaObject.connectSlotsByName(OwnrSIGNUP)
+        self.retranslateUi(LOGIN)
+        QtCore.QMetaObject.connectSlotsByName(LOGIN)
 
-    def retranslateUi(self, OwnrSIGNUP):
+    def retranslateUi(self, LOGIN):
         _translate = QtCore.QCoreApplication.translate
-        OwnrSIGNUP.setWindowTitle(_translate("OwnrSIGNUP", "Inventory and Sales Management System"))
-        self.label_9.setText(_translate("OwnrSIGNUP", "Create an Account"))
-        self.pushButton_signup.setText(_translate("OwnrSIGNUP", "Sign up"))
-        self.label_13.setText(_translate("OwnrSIGNUP", "Gender"))
-        self.owner_enterHomeAdd.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your home address"))
-        self.owner_InputConfirmPassword.setPlaceholderText(_translate("OwnrSIGNUP", "Confirm your password"))
-        self.label_3.setText(_translate("OwnrSIGNUP", "First Name"))
-        self.owner_enterPassword.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your password"))
-        self.owner_enterGender.setPlaceholderText(_translate("OwnrSIGNUP", "Male / Female"))
-        self.owner_enterUsername.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your username"))
-        self.label_12.setText(_translate("OwnrSIGNUP", "Last Name"))
-        self.label_15.setText(_translate("OwnrSIGNUP", "Home Address"))
-        self.label_17.setText(_translate("OwnrSIGNUP", "Username"))
-        self.label_14.setText(_translate("OwnrSIGNUP", "Middle Initial"))
-        self.owner_enterLASTname.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your last name"))
-        self.owner_enterMIDinitial.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your M.I."))
-        self.owner_enterContactNum.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your contact number"))
-        self.label_18.setText(_translate("OwnrSIGNUP", "Password"))
-        self.owner_enterFIRSTname.setPlaceholderText(_translate("OwnrSIGNUP", "Enter your first name"))
-        self.label_16.setText(_translate("OwnrSIGNUP", "Birthdate"))
-        self.label_19.setText(_translate("OwnrSIGNUP", "Confirm Password"))
-        self.label_20.setText(_translate("OwnrSIGNUP", "Contact Number"))
-        self.owner_enterBDAY.setPlaceholderText(_translate("OwnrSIGNUP", "yyyy/mm/dd"))
-        self.label_21.setText(_translate("OwnrSIGNUP", "Already have an account?"))
-        self.pushButton_backtologin.setText(_translate("OwnrSIGNUP", "LOGIN"))
-        self.label_5.setText(_translate("OwnrSIGNUP", "J & J Roofsteel and Gutter Supply"))
-        self.label_7.setText(_translate("OwnrSIGNUP", "Moalboal Branch"))
-        self.label_8.setText(_translate("OwnrSIGNUP", "Supply       |         Install       |         Repair    "))
+        LOGIN.setWindowTitle(_translate("LOGIN", "Inventory and Sales Management System"))
+        self.checkBox_rememberme.setText(_translate("LOGIN", "Remember me"))
+        self.pushButton_xtolanding.setText(_translate("LOGIN", "x"))
+        self.label_2.setText(_translate("LOGIN", "Login"))
+        self.label_3.setText(_translate("LOGIN", "Username"))
+        self.label_9.setText(_translate("LOGIN", "Password"))
+        self.login_usrname.setPlaceholderText(_translate("LOGIN", "Enter your username"))
+        self.login_password.setPlaceholderText(_translate("LOGIN", "Enter your password"))
+        self.pushButton_LOGIN.setText(_translate("LOGIN", "Login"))
+        self.label_10.setText(_translate("LOGIN", "Forgot password? Only available for"))
+        self.pushButton_forgotPass_login_page.setText(_translate("LOGIN", "Reset Password"))
+        self.label_12.setText(_translate("LOGIN", " Shop Owners"))
+        self.label_18.setText(_translate("LOGIN", "J & J Roofsteel and Gutter Supply"))
+        self.label_6.setText(_translate("LOGIN", "Moalboal Branch"))
+        self.label_11.setText(_translate("LOGIN", "Supply       |         Install       |         Repair    "))
 import jj_owner_resources_rc
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    OwnrSIGNUP = QtWidgets.QMainWindow()
-    ui = Ui_OwnrSIGNUP()
-    ui.setupUi(OwnrSIGNUP)
-    OwnrSIGNUP.show()
-    sys.exit(app.exec_())
-
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    OwnrSIGNUP = QtWidgets.QMainWindow()
-    ui = Ui_OwnrSIGNUP()
-    ui.setupUi(OwnrSIGNUP)
-    OwnrSIGNUP.show()
+    LOGIN = QtWidgets.QMainWindow()
+    ui = Ui_LOGIN()
+    ui.setupUi(LOGIN)
+    LOGIN.show()
     sys.exit(app.exec_())
 
 # FORGOT PASSWORD-----------------------------------------------------------------------------------------------------
@@ -992,150 +668,11 @@ class Ui_ForgotPass(object):  # THIS PART CORRESPONDS TO class ForgotPassword(QM
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_xtolanding_forgotpass.setObjectName("pushButton_xtolanding_forgotpass")
-        self.stackedWidget_forgotPass = QtWidgets.QStackedWidget(self.frame)
-        self.stackedWidget_forgotPass.setGeometry(QtCore.QRect(0, 90, 931, 861))
-        self.stackedWidget_forgotPass.setObjectName("stackedWidget_forgotPass")
-        self.enter_contact = QtWidgets.QWidget()
-        self.enter_contact.setObjectName("enter_contact")
-        self.frame_2 = QtWidgets.QFrame(self.enter_contact)
-        self.frame_2.setGeometry(QtCore.QRect(20, 110, 901, 521))
-        self.frame_2.setStyleSheet("background: transparent;")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.label_2 = QtWidgets.QLabel(self.frame_2)
-        self.label_2.setGeometry(QtCore.QRect(120, 30, 681, 131))
+        self.label_9 = QtWidgets.QLabel(self.frame)
+        self.label_9.setGeometry(QtCore.QRect(150, 30, 681, 91))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(40)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("color: #022162;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(self.frame_2)
-        self.label_3.setGeometry(QtCore.QRect(90, 150, 761, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color: #022162;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_3.setObjectName("label_3")
-        self.enter_contactnum_forgotpass = QtWidgets.QLineEdit(self.frame_2)
-        self.enter_contactnum_forgotpass.setGeometry(QtCore.QRect(20, 230, 851, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(13)
-        self.enter_contactnum_forgotpass.setFont(font)
-        self.enter_contactnum_forgotpass.setStyleSheet("border: 2px solid #022162; \n"
-"border-radius: 25px; \n"
-"padding: 5px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.enter_contactnum_forgotpass.setPlaceholderText("")
-        self.enter_contactnum_forgotpass.setObjectName("enter_contactnum_forgotpass")
-        self.continueto_entercode = QtWidgets.QPushButton(self.frame_2)
-        self.continueto_entercode.setGeometry(QtCore.QRect(20, 360, 851, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(15)
-        font.setBold(True)
-        font.setWeight(87)
-        self.continueto_entercode.setFont(font)
-        self.continueto_entercode.setStyleSheet("border: 2px solid #374550; \n"
-"border-radius: 25px; \n"
-"padding: 5px; \n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background-color: #374550; \n"
-"color: white;")
-        self.continueto_entercode.setObjectName("continueto_entercode")
-        self.stackedWidget_forgotPass.addWidget(self.enter_contact)
-        self.enter_verification = QtWidgets.QWidget()
-        self.enter_verification.setObjectName("enter_verification")
-        self.frame_3 = QtWidgets.QFrame(self.enter_verification)
-        self.frame_3.setGeometry(QtCore.QRect(20, 110, 901, 521))
-        self.frame_3.setStyleSheet("background: transparent;")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.label_7 = QtWidgets.QLabel(self.frame_3)
-        self.label_7.setGeometry(QtCore.QRect(120, 30, 681, 131))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(40)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("color: #022162;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_7.setObjectName("label_7")
-        self.label_8 = QtWidgets.QLabel(self.frame_3)
-        self.label_8.setGeometry(QtCore.QRect(40, 150, 811, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_8.setFont(font)
-        self.label_8.setStyleSheet("color: #022162;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_8.setObjectName("label_8")
-        self.enter_code = QtWidgets.QLineEdit(self.frame_3)
-        self.enter_code.setGeometry(QtCore.QRect(20, 230, 851, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(13)
-        self.enter_code.setFont(font)
-        self.enter_code.setStyleSheet("border: 2px solid #022162; \n"
-"border-radius: 25px; \n"
-"padding: 5px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.enter_code.setPlaceholderText("")
-        self.enter_code.setObjectName("enter_code")
-        self.confirmCode = QtWidgets.QPushButton(self.frame_3)
-        self.confirmCode.setGeometry(QtCore.QRect(20, 360, 851, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(15)
-        font.setBold(True)
-        font.setWeight(87)
-        self.confirmCode.setFont(font)
-        self.confirmCode.setStyleSheet("border: 2px solid #374550; \n"
-"border-radius: 25px; \n"
-"padding: 5px; \n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background-color: #374550; \n"
-"color: white;")
-        self.confirmCode.setObjectName("confirmCode")
-        self.stackedWidget_forgotPass.addWidget(self.enter_verification)
-        self.page = QtWidgets.QWidget()
-        self.page.setObjectName("page")
-        self.frame_4 = QtWidgets.QFrame(self.page)
-        self.frame_4.setGeometry(QtCore.QRect(20, 30, 901, 761))
-        self.frame_4.setStyleSheet("background: transparent;")
-        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_4.setObjectName("frame_4")
-        self.label_9 = QtWidgets.QLabel(self.frame_4)
-        self.label_9.setGeometry(QtCore.QRect(120, 20, 681, 111))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(40)
+        font.setPointSize(30)
         font.setBold(True)
         font.setWeight(87)
         self.label_9.setFont(font)
@@ -1145,11 +682,11 @@ class Ui_ForgotPass(object):  # THIS PART CORRESPONDS TO class ForgotPassword(QM
 "background: transparent;")
         self.label_9.setAlignment(QtCore.Qt.AlignCenter)
         self.label_9.setObjectName("label_9")
-        self.label_10 = QtWidgets.QLabel(self.frame_4)
-        self.label_10.setGeometry(QtCore.QRect(30, 160, 761, 61))
+        self.label_10 = QtWidgets.QLabel(self.frame)
+        self.label_10.setGeometry(QtCore.QRect(60, 70, 761, 121))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(16)
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(87)
         self.label_10.setFont(font)
@@ -1158,39 +695,23 @@ class Ui_ForgotPass(object):  # THIS PART CORRESPONDS TO class ForgotPassword(QM
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
         self.label_10.setObjectName("label_10")
-        self.setNewPass = QtWidgets.QLineEdit(self.frame_4)
-        self.setNewPass.setGeometry(QtCore.QRect(20, 230, 851, 61))
+        self.ResetPass_enter_username = QtWidgets.QLineEdit(self.frame)
+        self.ResetPass_enter_username.setGeometry(QtCore.QRect(40, 160, 851, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(13)
-        self.setNewPass.setFont(font)
-        self.setNewPass.setStyleSheet("border: 2px solid #022162; \n"
+        self.ResetPass_enter_username.setFont(font)
+        self.ResetPass_enter_username.setStyleSheet("border: 2px solid #022162; \n"
 "border-radius: 25px; \n"
 "padding: 5px;\n"
 "font-family: \"Verdana\", sans-serif; ")
-        self.setNewPass.setPlaceholderText("")
-        self.setNewPass.setObjectName("setNewPass")
-        self.pushButton_confirmPass_reset = QtWidgets.QPushButton(self.frame_4)
-        self.pushButton_confirmPass_reset.setGeometry(QtCore.QRect(20, 550, 851, 61))
+        self.ResetPass_enter_username.setPlaceholderText("")
+        self.ResetPass_enter_username.setObjectName("ResetPass_enter_username")
+        self.label_12 = QtWidgets.QLabel(self.frame)
+        self.label_12.setGeometry(QtCore.QRect(60, 200, 771, 101))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(15)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_confirmPass_reset.setFont(font)
-        self.pushButton_confirmPass_reset.setStyleSheet("border: 2px solid #374550; \n"
-"border-radius: 25px; \n"
-"padding: 5px; \n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background-color: #374550; \n"
-"color: white;")
-        self.pushButton_confirmPass_reset.setObjectName("pushButton_confirmPass_reset")
-        self.label_12 = QtWidgets.QLabel(self.frame_4)
-        self.label_12.setGeometry(QtCore.QRect(30, 340, 761, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(16)
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(87)
         self.label_12.setFont(font)
@@ -1199,19 +720,176 @@ class Ui_ForgotPass(object):  # THIS PART CORRESPONDS TO class ForgotPassword(QM
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
         self.label_12.setObjectName("label_12")
-        self.confirmNewPass = QtWidgets.QLineEdit(self.frame_4)
-        self.confirmNewPass.setGeometry(QtCore.QRect(20, 410, 851, 61))
+        self.ResetPass_enter_email = QtWidgets.QLineEdit(self.frame)
+        self.ResetPass_enter_email.setGeometry(QtCore.QRect(40, 280, 851, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(13)
-        self.confirmNewPass.setFont(font)
-        self.confirmNewPass.setStyleSheet("border: 2px solid #022162; \n"
+        self.ResetPass_enter_email.setFont(font)
+        self.ResetPass_enter_email.setStyleSheet("border: 2px solid #022162; \n"
 "border-radius: 25px; \n"
 "padding: 5px;\n"
 "font-family: \"Verdana\", sans-serif; ")
-        self.confirmNewPass.setPlaceholderText("")
-        self.confirmNewPass.setObjectName("confirmNewPass")
-        self.stackedWidget_forgotPass.addWidget(self.page)
+        self.ResetPass_enter_email.setPlaceholderText("")
+        self.ResetPass_enter_email.setObjectName("ResetPass_enter_email")
+        self.pushButton_ResetPass_send_code = QtWidgets.QPushButton(self.frame)
+        self.pushButton_ResetPass_send_code.setGeometry(QtCore.QRect(650, 360, 231, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(75)
+        self.pushButton_ResetPass_send_code.setFont(font)
+        self.pushButton_ResetPass_send_code.setStyleSheet("QPushButton {\n"
+"background-color: #374550;\n"
+"border-radius: 15px; \n"
+"padding: 4px;\n"
+"border: none;\n"
+"color: white;\n"
+"font-family: \"MS Shell Dlg 2\", sans-serif;\n"
+"                }\n"
+"QPushButton:hover {\n"
+"                    background-color:black;\n"
+"                    color:white;\n"
+"font-weight: 700;\n"
+"                    text-align: center;\n"
+"                }\n"
+"")
+        self.pushButton_ResetPass_send_code.setObjectName("pushButton_ResetPass_send_code")
+        self.label_13 = QtWidgets.QLabel(self.frame)
+        self.label_13.setGeometry(QtCore.QRect(60, 390, 771, 91))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_13.setFont(font)
+        self.label_13.setStyleSheet("color: #022162;\n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.label_13.setObjectName("label_13")
+        self.ResetPass_enter_code = QtWidgets.QLineEdit(self.frame)
+        self.ResetPass_enter_code.setGeometry(QtCore.QRect(40, 460, 851, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(13)
+        self.ResetPass_enter_code.setFont(font)
+        self.ResetPass_enter_code.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
+"font-family: \"Verdana\", sans-serif; ")
+        self.ResetPass_enter_code.setPlaceholderText("")
+        self.ResetPass_enter_code.setObjectName("ResetPass_enter_code")
+        self.label_14 = QtWidgets.QLabel(self.frame)
+        self.label_14.setGeometry(QtCore.QRect(60, 590, 791, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_14.setFont(font)
+        self.label_14.setStyleSheet("color: #022162;\n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.label_14.setObjectName("label_14")
+        self.setNewPass_enter_new_pass = QtWidgets.QLineEdit(self.frame)
+        self.setNewPass_enter_new_pass.setGeometry(QtCore.QRect(40, 640, 851, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(13)
+        self.setNewPass_enter_new_pass.setFont(font)
+        self.setNewPass_enter_new_pass.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
+"font-family: \"Verdana\", sans-serif; ")
+        self.setNewPass_enter_new_pass.setPlaceholderText("")
+        self.setNewPass_enter_new_pass.setObjectName("setNewPass_enter_new_pass")
+        self.label_15 = QtWidgets.QLabel(self.frame)
+        self.label_15.setGeometry(QtCore.QRect(60, 720, 791, 21))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_15.setFont(font)
+        self.label_15.setStyleSheet("color: #022162;\n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.label_15.setObjectName("label_15")
+        self.setNewPass_confirmNewPass = QtWidgets.QLineEdit(self.frame)
+        self.setNewPass_confirmNewPass.setGeometry(QtCore.QRect(40, 760, 851, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(13)
+        self.setNewPass_confirmNewPass.setFont(font)
+        self.setNewPass_confirmNewPass.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
+"font-family: \"Verdana\", sans-serif; ")
+        self.setNewPass_confirmNewPass.setPlaceholderText("")
+        self.setNewPass_confirmNewPass.setObjectName("setNewPass_confirmNewPass")
+        self.pushButton_ChangePass = QtWidgets.QPushButton(self.frame)
+        self.pushButton_ChangePass.setGeometry(QtCore.QRect(40, 860, 851, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setWeight(87)
+        self.pushButton_ChangePass.setFont(font)
+        self.pushButton_ChangePass.setStyleSheet("border: 2px solid #374550; \n"
+"border-radius: 25px; \n"
+"padding: 5px; \n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background-color: #374550; \n"
+"color: white;")
+        self.pushButton_ChangePass.setObjectName("pushButton_ChangePass")
+        self.pushButton_ResetPass_confirm_code = QtWidgets.QPushButton(self.frame)
+        self.pushButton_ResetPass_confirm_code.setGeometry(QtCore.QRect(650, 540, 231, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(75)
+        self.pushButton_ResetPass_confirm_code.setFont(font)
+        self.pushButton_ResetPass_confirm_code.setStyleSheet("QPushButton {\n"
+"background-color: #374550;\n"
+"border-radius: 15px; \n"
+"padding: 4px;\n"
+"border: none;\n"
+"color: white;\n"
+"font-family: \"MS Shell Dlg 2\", sans-serif;\n"
+"                }\n"
+"QPushButton:hover {\n"
+"                    background-color:black;\n"
+"                    color:white;\n"
+"font-weight: 700;\n"
+"                    text-align: center;\n"
+"                }\n"
+"")
+        self.pushButton_ResetPass_confirm_code.setObjectName("pushButton_ResetPass_confirm_code")
+        self.pushButton_xtolanding_forgotpass.raise_()
+        self.label_9.raise_()
+        self.label_10.raise_()
+        self.ResetPass_enter_username.raise_()
+        self.label_12.raise_()
+        self.ResetPass_enter_email.raise_()
+        self.label_13.raise_()
+        self.ResetPass_enter_code.raise_()
+        self.label_14.raise_()
+        self.setNewPass_enter_new_pass.raise_()
+        self.label_15.raise_()
+        self.setNewPass_confirmNewPass.raise_()
+        self.pushButton_ChangePass.raise_()
+        self.pushButton_ResetPass_send_code.raise_()
+        self.pushButton_ResetPass_confirm_code.raise_()
         self.jframe = QtWidgets.QFrame(self.centralwidget)
         self.jframe.setGeometry(QtCore.QRect(-10, 460, 951, 431))
         self.jframe.setStyleSheet("background: transparent;")
@@ -1270,23 +948,21 @@ class Ui_ForgotPass(object):  # THIS PART CORRESPONDS TO class ForgotPassword(QM
         ForgotPass.setStatusBar(self.statusbar)
 
         self.retranslateUi(ForgotPass)
-        self.stackedWidget_forgotPass.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(ForgotPass)
 
     def retranslateUi(self, ForgotPass):
         _translate = QtCore.QCoreApplication.translate
         ForgotPass.setWindowTitle(_translate("ForgotPass", "Inventory and Sales Management System"))
         self.pushButton_xtolanding_forgotpass.setText(_translate("ForgotPass", "x"))
-        self.label_2.setText(_translate("ForgotPass", "Forgot Password"))
-        self.label_3.setText(_translate("ForgotPass", "Please enter the contact number associated with your account."))
-        self.continueto_entercode.setText(_translate("ForgotPass", "CONTINUE"))
-        self.label_7.setText(_translate("ForgotPass", "Forgot Password"))
-        self.label_8.setText(_translate("ForgotPass", "Enter the code sent to your number."))
-        self.confirmCode.setText(_translate("ForgotPass", "CONFIRM"))
         self.label_9.setText(_translate("ForgotPass", "Reset Password"))
-        self.label_10.setText(_translate("ForgotPass", "Set new password"))
-        self.pushButton_confirmPass_reset.setText(_translate("ForgotPass", "CONFIRM"))
-        self.label_12.setText(_translate("ForgotPass", "Confirm new password"))
+        self.label_10.setText(_translate("ForgotPass", "Username"))
+        self.label_12.setText(_translate("ForgotPass", "Email"))
+        self.pushButton_ResetPass_send_code.setText(_translate("ForgotPass", "Send code to Email"))
+        self.label_13.setText(_translate("ForgotPass", "Input Code"))
+        self.label_14.setText(_translate("ForgotPass", "Set new password"))
+        self.label_15.setText(_translate("ForgotPass", "Confirm new password"))
+        self.pushButton_ChangePass.setText(_translate("ForgotPass", "CHANGE PASSWORD"))
+        self.pushButton_ResetPass_confirm_code.setText(_translate("ForgotPass", "Confirm Code"))
         self.label_18.setText(_translate("ForgotPass", "J & J Roofsteel and Gutter Supply"))
         self.label_6.setText(_translate("ForgotPass", "Moalboal Branch"))
         self.label_11.setText(_translate("ForgotPass", "Supply       |         Install       |         Repair    "))
@@ -1302,298 +978,6 @@ if __name__ == "__main__":
     ForgotPass.show()
     sys.exit(app.exec_())
 
-# CASHIER LOGIN------------------------------------------------------------------------------------------------------
-class Ui_CashrLOGIN(object):  # THIS PART CORRESPONDS TO class CashierLoginPage(QMainWindow) in main_app.py
-    def setupUi(self, CashrLOGIN):
-        CashrLOGIN.setObjectName("CashrLOGIN")
-        CashrLOGIN.resize(1925, 1033)
-        CashrLOGIN.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.centralwidget = QtWidgets.QWidget(CashrLOGIN)
-        self.centralwidget.setStyleSheet("background-color: white;")
-        self.centralwidget.setObjectName("centralwidget")
-        self.PIC = QtWidgets.QLabel(self.centralwidget)
-        self.PIC.setGeometry(QtCore.QRect(0, 0, 1921, 982))
-        self.PIC.setMinimumSize(QtCore.QSize(100, 40))
-        self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap(":/JJimages/PIC_log_sign_in.png"))
-        self.PIC.setScaledContents(True)
-        self.PIC.setObjectName("PIC")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
-        self.label.setStyleSheet("background-color: transparent;")
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
-        self.label.setScaledContents(True)
-        self.label.setObjectName("label")
-        self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(990, 0, 931, 982))
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.label_9 = QtWidgets.QLabel(self.frame)
-        self.label_9.setGeometry(QtCore.QRect(350, 100, 261, 111))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_9.setFont(font)
-        self.label_9.setStyleSheet("color: #022162;\n"
-"font-size: 78px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_9.setScaledContents(True)
-        self.label_9.setObjectName("label_9")
-        self.pushButton_xtolanding_cashier = QtWidgets.QPushButton(self.frame)
-        self.pushButton_xtolanding_cashier.setGeometry(QtCore.QRect(830, 30, 61, 31))
-        self.pushButton_xtolanding_cashier.setMinimumSize(QtCore.QSize(40, 10))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_xtolanding_cashier.setFont(font)
-        self.pushButton_xtolanding_cashier.setStyleSheet("border-radius: 13px; \n"
-"padding: 1px; \n"
-"font-size: 15px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background-color: #374550; \n"
-"color: white;")
-        self.pushButton_xtolanding_cashier.setObjectName("pushButton_xtolanding_cashier")
-        self.label_10 = QtWidgets.QLabel(self.frame)
-        self.label_10.setGeometry(QtCore.QRect(60, 220, 221, 101))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_10.setFont(font)
-        self.label_10.setStyleSheet("color: #022162;\n"
-"font-size: 30px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_10.setScaledContents(True)
-        self.label_10.setObjectName("label_10")
-        self.cashr_login_usrname = QtWidgets.QLineEdit(self.frame)
-        self.cashr_login_usrname.setGeometry(QtCore.QRect(40, 310, 851, 61))
-        self.cashr_login_usrname.setMinimumSize(QtCore.QSize(100, 40))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.cashr_login_usrname.setFont(font)
-        self.cashr_login_usrname.setStyleSheet("border: 2px solid #022162; \n"
-"border-radius: 25px; \n"
-"padding: 5px;\n"
-"font-size: 22px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.cashr_login_usrname.setObjectName("cashr_login_usrname")
-        self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(60, 390, 181, 131))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_4.setFont(font)
-        self.label_4.setStyleSheet("color: #022162;\n"
-"font-size: 30px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_4.setScaledContents(True)
-        self.label_4.setObjectName("label_4")
-        self.cashr_login_password = QtWidgets.QLineEdit(self.frame)
-        self.cashr_login_password.setGeometry(QtCore.QRect(40, 500, 851, 61))
-        self.cashr_login_password.setMinimumSize(QtCore.QSize(100, 40))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.cashr_login_password.setFont(font)
-        self.cashr_login_password.setStyleSheet("border: 2px solid #022162; \n"
-"border-radius: 25px; \n"
-"padding: 5px;\n"
-"font-size: 22px;\n"
-"font-family: \"Verdana\", sans-serif; ")
-        self.cashr_login_password.setObjectName("cashr_login_password")
-        self.checkBox_CASHIEREMEMBERME = QtWidgets.QCheckBox(self.frame)
-        self.checkBox_CASHIEREMEMBERME.setGeometry(QtCore.QRect(60, 580, 191, 20))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.checkBox_CASHIEREMEMBERME.setFont(font)
-        self.checkBox_CASHIEREMEMBERME.setStyleSheet("color: #022162;\n"
-"font-size: 21px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.checkBox_CASHIEREMEMBERME.setObjectName("checkBox_CASHIEREMEMBERME")
-        self.pushButton_CASHIERLOGIN = QtWidgets.QPushButton(self.frame)
-        self.pushButton_CASHIERLOGIN.setGeometry(QtCore.QRect(40, 680, 851, 61))
-        self.pushButton_CASHIERLOGIN.setMinimumSize(QtCore.QSize(100, 40))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_CASHIERLOGIN.setFont(font)
-        self.pushButton_CASHIERLOGIN.setStyleSheet("border: 2px solid #374550; \n"
-"border-radius: 25px; \n"
-"padding: 5px; \n"
-"font-size: 27px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background-color: #374550; \n"
-"color: white;")
-        self.pushButton_CASHIERLOGIN.setObjectName("pushButton_CASHIERLOGIN")
-        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(-10, 460, 991, 491))
-        self.frame_2.setStyleSheet("background: transparent;")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.label_5 = QtWidgets.QLabel(self.frame_2)
-        self.label_5.setGeometry(QtCore.QRect(110, 50, 791, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_5.setFont(font)
-        self.label_5.setStyleSheet("color: #ffffff;\n"
-"font-size: 41px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;\n"
-"")
-        self.label_5.setScaledContents(True)
-        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_5.setObjectName("label_5")
-        self.label_7 = QtWidgets.QLabel(self.frame_2)
-        self.label_7.setGeometry(QtCore.QRect(320, 120, 321, 41))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("color: #ffffff;\n"
-"font-size: 31px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;\n"
-"")
-        self.label_7.setScaledContents(True)
-        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_7.setObjectName("label_7")
-        self.label_8 = QtWidgets.QLabel(self.frame_2)
-        self.label_8.setGeometry(QtCore.QRect(170, 250, 631, 41))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_8.setFont(font)
-        self.label_8.setStyleSheet("color: #fff2bd; \n"
-"font-size: 27px; \n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent; \n"
-"")
-        self.label_8.setObjectName("label_8")
-        CashrLOGIN.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(CashrLOGIN)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1925, 26))
-        self.menubar.setObjectName("menubar")
-        CashrLOGIN.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(CashrLOGIN)
-        self.statusbar.setObjectName("statusbar")
-        CashrLOGIN.setStatusBar(self.statusbar)
-
-        self.retranslateUi(CashrLOGIN)
-        QtCore.QMetaObject.connectSlotsByName(CashrLOGIN)
-
-    def retranslateUi(self, CashrLOGIN):
-        _translate = QtCore.QCoreApplication.translate
-        CashrLOGIN.setWindowTitle(_translate("CashrLOGIN", "Inventory and Sales Management System"))
-        self.label_9.setText(_translate("CashrLOGIN", "Login"))
-        self.pushButton_xtolanding_cashier.setText(_translate("CashrLOGIN", "x"))
-        self.label_10.setText(_translate("CashrLOGIN", "Username"))
-        self.cashr_login_usrname.setPlaceholderText(_translate("CashrLOGIN", "Enter your username"))
-        self.label_4.setText(_translate("CashrLOGIN", "Password"))
-        self.cashr_login_password.setPlaceholderText(_translate("CashrLOGIN", "Enter your password"))
-        self.checkBox_CASHIEREMEMBERME.setText(_translate("CashrLOGIN", "Remember me"))
-        self.pushButton_CASHIERLOGIN.setText(_translate("CashrLOGIN", "Login"))
-        self.label_5.setText(_translate("CashrLOGIN", "J & J Roofsteel and Gutter Supply"))
-        self.label_7.setText(_translate("CashrLOGIN", "Moalboal Branch"))
-        self.label_8.setText(_translate("CashrLOGIN", "Supply       |         Install       |         Repair    "))
-import jj_owner_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    CashrLOGIN = QtWidgets.QMainWindow()
-    ui = Ui_CashrLOGIN()
-    ui.setupUi(CashrLOGIN)
-    CashrLOGIN.show()
-    sys.exit(app.exec_())
-
-
-# CASHIER DASHBOARD --------------------------------------------------------------------------------------------------
-class Ui_CASHIER_DASHBOARD(object):  # THIS PART CORRESPONDS TO class CashierDashboard(QMainWindow) in main_app.py
-    def setupUi(self, CASHIER_DASHBOARD):
-        CASHIER_DASHBOARD.setObjectName("CASHIER_DASHBOARD")
-        CASHIER_DASHBOARD.resize(1280, 849)
-        self.centralwidget = QtWidgets.QWidget(CASHIER_DASHBOARD)
-        self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(-1430, -150, 2721, 1361))
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/images/PIC_log_sign_in.png"))
-        self.label.setScaledContents(True)
-        self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(30, 90, 1231, 511))
-        self.label_2.setStyleSheet("color: #022162;\n"
-"font-size: 58px;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.label_2.setObjectName("label_2")
-        self.pushButton_CashrDASH = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_CashrDASH.setGeometry(QtCore.QRect(20, 90, 201, 71))
-        self.pushButton_CashrDASH.setObjectName("pushButton_CashrDASH")
-        CASHIER_DASHBOARD.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(CASHIER_DASHBOARD)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 26))
-        self.menubar.setObjectName("menubar")
-        CASHIER_DASHBOARD.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(CASHIER_DASHBOARD)
-        self.statusbar.setObjectName("statusbar")
-        CASHIER_DASHBOARD.setStatusBar(self.statusbar)
-
-        self.retranslateUi(CASHIER_DASHBOARD)
-        QtCore.QMetaObject.connectSlotsByName(CASHIER_DASHBOARD)
-
-    def retranslateUi(self, CASHIER_DASHBOARD):
-        _translate = QtCore.QCoreApplication.translate
-        CASHIER_DASHBOARD.setWindowTitle(_translate("CASHIER_DASHBOARD", "Inventory and Sales Management System"))
-        self.label_2.setText(_translate("CASHIER_DASHBOARD", "CASHIER DASHBOARD BY CLAUDIN"))
-        self.pushButton_CashrDASH.setText(_translate("CASHIER_DASHBOARD", "DASHBOARD"))
-import jj_owner_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    CASHIER_DASHBOARD = QtWidgets.QMainWindow()
-    ui = Ui_CASHIER_DASHBOARD()
-    ui.setupUi(CASHIER_DASHBOARD)
-    CASHIER_DASHBOARD.show()
-    sys.exit(app.exec_())
 
 # OWNER INTERFACE----------------------------------------------------------------------------------------------------
 class Ui_OWNER(object):   # THIS PART CORRESPONDS TO class OwnerInterface(QMainWindow) in main_app.py
