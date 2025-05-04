@@ -8,12 +8,9 @@ from matplotlib.figure import Figure
 # Import UI classes (generated from .ui files)
 from ui_classes import (
     Ui_JJ_LANDING,
-    Ui_OwnrLOGIN, 
-    Ui_OwnrSIGNUP,
+    Ui_LOGIN,
     Ui_ForgotPass,
-    Ui_OWNER, 
-    Ui_CashrLOGIN,
-    Ui_CASHIER_DASHBOARD)
+    Ui_OWNER)
 
 
 class LandingPage(QMainWindow):
@@ -22,35 +19,22 @@ class LandingPage(QMainWindow):
         self.ui = Ui_JJ_LANDING()
         self.ui.setupUi(self)
         
-        self.ui.pushButton_contOwner.clicked.connect(self.open_owner_login)
-        self.ui.pushButton_contCashier.clicked.connect(self.open_cashier_login)
+        self.ui.pushButton_cont_2Login.clicked.connect(self.open_login)
 
-    def open_owner_login(self):#Open owner login page and close current window
-        self.owner_login = OwnerLoginPage()
+    def open_login(self):#Open login page and close current window
+        self.owner_login = Login()
         self.owner_login.show()
         self.close()
 
-    def open_cashier_login(self):
-        self.cashier_login = CashierLoginPage()
-        self.cashier_login.show()
-        self.close()
-
-
-class OwnerLoginPage(QMainWindow):
+class Login(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = Ui_OwnrLOGIN()
+        self.ui = Ui_LOGIN()
         self.ui.setupUi(self)
 
-        self.ui.pushButton_signup.clicked.connect(self.open_signup_page)       
         self.ui.pushButton_LOGIN.clicked.connect(self.open_owner_interface)
-        self.ui.pushButton_xtolanding_owner.clicked.connect(self.return_to_landing)
+        self.ui.pushButton_xtolanding.clicked.connect(self.return_to_landing)
         self.ui.pushButton_forgotPass_login_page.clicked.connect(self.open_forgot_password)
-
-    def open_signup_page(self):
-        self.signup_window = OwnerSignupPage()
-        self.signup_window.show()
-        self.close()
 
     def open_owner_interface(self):
         # TODO: Add actual authentication logic here
@@ -68,28 +52,6 @@ class OwnerLoginPage(QMainWindow):
         self.landing_page.show()
         self.close()
 
-class OwnerSignupPage(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_OwnrSIGNUP()
-        self.ui.setupUi(self)
-
-        self.ui.pushButton_signup.clicked.connect(self.create_account)
-        self.ui.pushButton_backtologin.clicked.connect(self.go_to_login)
-
-    def create_account(self):
-        """Handle account creation (currently just shows success message)"""
-        # TODO: Add actual account creation logic
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Information)
-        msg.setWindowTitle("Success")
-        msg.setText("Your account has been created!")
-        msg.exec_()
-
-    def go_to_login(self):
-        self.login_window = OwnerLoginPage()
-        self.login_window.show()
-        self.close()
 
 class ForgotPassword(QMainWindow):
     def __init__(self):
@@ -97,24 +59,11 @@ class ForgotPassword(QMainWindow):
         self.ui = Ui_ForgotPass()
         self.ui.setupUi(self)
         
-        # Set initial page
-        self.ui.stackedWidget_forgotPass.setCurrentIndex(0)
-        
         # Connect buttons
         self.ui.pushButton_xtolanding_forgotpass.clicked.connect(self.backto_owner_login_after_reset)
-        self.ui.continueto_entercode.clicked.connect(self.go_to_verification_page)
-        self.ui.confirmCode.clicked.connect(self.go_to_reset_password_page)
-        self.ui.pushButton_confirmPass_reset.clicked.connect(self.reset_password)
+        self.ui.pushButton_ChangePass.clicked.connect(self.change_password_back2login)
     
-    def go_to_verification_page(self):
-        # TODO: add validation for contact number here
-        self.ui.stackedWidget_forgotPass.setCurrentIndex(1)
-    
-    def go_to_reset_password_page(self):
-        # TODO: add verification code validation here
-        self.ui.stackedWidget_forgotPass.setCurrentIndex(2)
-    
-    def reset_password(self):
+    def change_password_back2login(self):
         # TODO: add password reset logic here (Check if passwords match, etc.)
         self.close()
         
@@ -127,38 +76,9 @@ class ForgotPassword(QMainWindow):
         self.backto_owner_login_after_reset()  # Return to log in page after reset
         
     def backto_owner_login_after_reset(self):
-        self.owner_login = OwnerLoginPage()
+        self.owner_login = Login()
         self.owner_login.show()
         self.close()    
-
-class CashierLoginPage(QMainWindow):
-    """Cashier login page and authentication functionality here"""
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_CashrLOGIN()
-        self.ui.setupUi(self)      
-
-        self.ui.pushButton_CASHIERLOGIN.clicked.connect(self.open_cashier_dashboard)
-        self.ui.pushButton_xtolanding_cashier.clicked.connect(self.return_to_landing)
-
-    def open_cashier_dashboard(self): # NOTE: CHANGE THIS open_cashier_dashboard IGHUMAN UI SA CASHIER
-        # TODO: Add actual authentication logic here
-        self.cashier_dashboard = CashierDashboard()
-        self.cashier_dashboard.show()
-        self.close()
-        
-    def return_to_landing(self):
-        self.landing_page = LandingPage()
-        self.landing_page.show()
-        self.close()
-
-
-class CashierDashboard(QMainWindow): # NOTE: CHANGE THIS open_cashier_dashboard IGHUMAN UI SA CASHIER
-    def __init__(self):
-        super().__init__()
-        self.ui = Ui_CASHIER_DASHBOARD()
-        self.ui.setupUi(self)
-
 
 class OwnerInterface(QMainWindow):
     def __init__(self):
